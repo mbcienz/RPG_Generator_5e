@@ -39,8 +39,11 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"></div>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">SystemReferenceDocument-5e-Implementation</a></li>
+</ul>
+
         </div>
       </div>
     </nav>
@@ -140,9 +143,9 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">assertGreaterEqual</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">MIN_DICE_VALUE</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="TestDice.set_faces1">
-<a class="viewcode-back" href="../../../tests.core.html#tests.core.dice_test.TestDice.set_faces1">[docs]</a>
-    <span class="k">def</span><span class="w"> </span><span class="nf">set_faces1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="TestDice.test_set_faces1">
+<a class="viewcode-back" href="../../../tests.core.html#tests.core.dice_test.TestDice.test_set_faces1">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_set_faces1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Create a dice and set the number of faces to 10.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">FACES</span> <span class="o">=</span> <span class="mi">10</span>
@@ -151,9 +154,9 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">dice</span><span class="o">.</span><span class="n">get_faces</span><span class="p">(),</span> <span class="n">FACES</span><span class="p">)</span></div>
 
     
-<div class="viewcode-block" id="TestDice.set_faces2">
-<a class="viewcode-back" href="../../../tests.core.html#tests.core.dice_test.TestDice.set_faces2">[docs]</a>
-    <span class="k">def</span><span class="w"> </span><span class="nf">set_faces2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="TestDice.test_set_faces2">
+<a class="viewcode-back" href="../../../tests.core.html#tests.core.dice_test.TestDice.test_set_faces2">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_set_faces2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Create a dice and set the number of faces to and invalid value.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">FACES</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span>
@@ -162,9 +165,9 @@
             <span class="n">dice</span><span class="o">.</span><span class="n">set_faces</span><span class="p">(</span><span class="n">FACES</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="TestDice.set_faces3">
-<a class="viewcode-back" href="../../../tests.core.html#tests.core.dice_test.TestDice.set_faces3">[docs]</a>
-    <span class="k">def</span><span class="w"> </span><span class="nf">set_faces3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="TestDice.test_set_faces3">
+<a class="viewcode-back" href="../../../tests.core.html#tests.core.dice_test.TestDice.test_set_faces3">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_set_faces3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Create a dice and set the number of faces to and invalid type.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">FACES</span> <span class="o">=</span><span class="mf">8.2</span>
@@ -173,9 +176,9 @@
             <span class="n">dice</span><span class="o">.</span><span class="n">set_faces</span><span class="p">(</span><span class="n">FACES</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="TestDice.set_faces4">
-<a class="viewcode-back" href="../../../tests.core.html#tests.core.dice_test.TestDice.set_faces4">[docs]</a>
-    <span class="k">def</span><span class="w"> </span><span class="nf">set_faces4</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="TestDice.test_set_faces4">
+<a class="viewcode-back" href="../../../tests.core.html#tests.core.dice_test.TestDice.test_set_faces4">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_set_faces4</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Create a dice and set the number of faces to and invalid type.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">FACES</span> <span class="o">=</span> <span class="s2">&quot;hello&quot;</span>

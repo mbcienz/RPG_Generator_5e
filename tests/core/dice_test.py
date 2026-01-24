@@ -49,7 +49,7 @@ class TestDice(unittest.TestCase):
         self.assertLessEqual(result, MAX_DICE_FACES)
         self.assertGreaterEqual(result, MIN_DICE_VALUE)
 
-    def set_faces1(self):
+    def test_set_faces1(self):
         """Create a dice and set the number of faces to 10.
         """
         FACES = 10
@@ -57,7 +57,7 @@ class TestDice(unittest.TestCase):
         dice.set_faces(FACES)
         self.assertEqual(dice.get_faces(), FACES)
     
-    def set_faces2(self):
+    def test_set_faces2(self):
         """Create a dice and set the number of faces to and invalid value.
         """
         FACES = -10
@@ -65,7 +65,7 @@ class TestDice(unittest.TestCase):
         with self.assertRaises(DiceFacesValueError):
             dice.set_faces(FACES)
 
-    def set_faces3(self):
+    def test_set_faces3(self):
         """Create a dice and set the number of faces to and invalid type.
         """
         FACES =8.2
@@ -73,7 +73,7 @@ class TestDice(unittest.TestCase):
         with self.assertRaises(DiceFacesTypeError):
             dice.set_faces(FACES)
 
-    def set_faces4(self):
+    def test_set_faces4(self):
         """Create a dice and set the number of faces to and invalid type.
         """
         FACES = "hello"
